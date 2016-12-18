@@ -1,0 +1,1 @@
+takeown /f "%cd%" /r & icacls "%cd%" /reset /t /c /q

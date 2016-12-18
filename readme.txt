@@ -1,7 +1,7 @@
 
 # Troubleshooting:
 
-ownership and deletion issues: double click on the ownership.bat and accept with Y. Then delete.
+ownership and deletion issues: double click on the correct ownership.bat and accept with Y. Then delete the folder.
 
 There is no conf/rc file with this set-up. You need to use an lftp script  with your required options and call that in ConEmu. It pretty much works out the same anyway.
 

@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# v1.0.4 nwgat
+# v1.0.5 nwgat
 #
 # Credits: A heavily modified version of this idea and script http://www.torrent-invites.com/showthread.php?t=132965 towards a simplified end user experience.
 # Authors: Lordhades - Adamaze - userdocs

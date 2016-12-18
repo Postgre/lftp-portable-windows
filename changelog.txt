@@ -5,4 +5,4 @@ notepad ++ 7.2.2
 cygwin binaries and dll files updated.
 cut added
 whereis added
-lftpsync script now check for gawk or awk and uses the correct command.
+lftpsync script now checks for gawk or awk and uses the correct command.
