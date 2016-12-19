@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# v1.0.5 nwgat
+# v1.0.5 lftp sync script
 #
 # Credits: A heavily modified version of this idea and script http://www.torrent-invites.com/showthread.php?t=132965 towards a simplified end user experience.
 # Authors: Lordhades - Adamaze - userdocs
@@ -111,24 +111,24 @@ trap "rm -f $lock_file" SIGINT SIGTERM
 if [[ -f "$lock_file" ]]
 #
 then
-	echo "$base_name is running already."
-	exit
+    echo "$base_name is running already."
+    exit
 else
-	touch "$lock_file"
-	lftp -e "debug -Tpo $tmpdir/$base_name.PID 0;set sftp:connect-program ssh -a -x -i $keydirectory/$keyname" -p "$port" -u "$username,$password" "sftp://$hostname" <<-EOF
-	set sftp:auto-confirm yes
+    touch "$lock_file"
+    lftp -e "debug -Tpo $tmpdir/$base_name.PID 0;set sftp:connect-program ssh -a -x -i $keydirectory/$keyname" -p "$port" -u "$username,$password" "sftp://$hostname" <<-EOF
+    set sftp:auto-confirm yes
     set sftp:charset "utf-8"
-	set pget:default-n $default_pget
-	set mirror:parallel-transfer-count "$parallel"
-	set mirror:use-pget-n $pget_mirror
-	mirror $args --log="$tmpdir/$base_name.log" "$remote_dir" "$local_dir"
+    set pget:default-n $default_pget
+    set mirror:parallel-transfer-count "$parallel"
+    set mirror:use-pget-n $pget_mirror
+    mirror $args --log="$tmpdir/$base_name.log" "$remote_dir" "$local_dir"
     set cache:enable no
     set show-status no
-	quit
-	EOF
-	#
-	rm -f "$tmpdir/$base_name.PID" "$lock_file" "$tmpdir/$base_name.log"
+    quit
+    EOF
     #
-	trap - SIGINT SIGTERM
-	exit
+    rm -f "$tmpdir/$base_name.PID" "$lock_file" "$tmpdir/$base_name.log"
+    #
+    trap - SIGINT SIGTERM
+    exit
 fi
