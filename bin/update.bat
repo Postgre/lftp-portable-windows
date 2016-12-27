@@ -1,0 +1,1 @@
+for /f "delims=" %%i in (filelist.txt) do copy "C:\cygwin64\bin\%%i*" "%%i*"
