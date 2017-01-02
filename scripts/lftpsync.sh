@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# v1.0.5 lftp sync script
+# v1.0.6 lftp sync script
 #
 # Credits: A heavily modified version of this idea and script http://www.torrent-invites.com/showthread.php?t=132965 towards a simplified end user experience.
 # Authors: Lordhades - Adamaze - userdocs
@@ -27,6 +27,7 @@ hostname="servername.com"
 # 5: The remote directory on the seedbox you wish to mirror from. Can now be passed to the script directly using "$1". It must exist on the remote server.
 remote_dir='~/directory/to/mirror/from'
 # 6: Optional - The local directory your files will be mirrored to. It is relative to the portable folder and will be created if it does not exist so the default setting will work.
+# Use the cygwin path format for other loaation - /cygdrive/c/download = C:\downloads
 local_dir="/Downloads"
 # 7: Optional - Set the SSH port if yours is not the default.
 port="22"
@@ -41,60 +42,60 @@ args="-c"
 #
 # LFTP Mirror switches
 #
-# -c,      --continue                 continue a mirror job if possible
-# -e,      --delete                   delete files not present at remote site
-#          --delete-first             delete old files before transferring new ones
-#          --depth-first              descend   into  subdirectories  before  transferring files
-#          --scan-all-first           scan all directories recursively before transferring files
-# -s,      --allow-suid               set suid/sgid bits according to remote site
-#          --allow-chown              try to set owner and group on files
-#          --ascii                    use ascii mode transfers (implies --ignore-size)
-#          --ignore-time              ignore time when deciding whether to download
-#          --ignore-size              ignore size when deciding whether to download
-#          --only-missing             download only missing files
-#          --only-existing            download only files already existing at target
-# -n,      --only-newer               download only newer files (-c won't work)
-#          --upload-older             upload even files older than remote ones
-#          --transfer-all             transfer  all  files, even seemingly the same at the target site
-#          --no-empty-dirs            don't    create    empty    directories     (implies --depth-first)
-# -r,      --no-recursion             don't go to subdirectories
-#          --recursion=MODE           go to subdirectories on a condition
-#          --no-symlinks              don't create symbolic links
-# -p,      --no-perms                 don't set file permissions
-#          --no-umask                 don't apply umask to file modes
-# -R,      --reverse                  reverse mirror (put files)
-# -L,      --dereference              download symbolic links as files
-#          --overwrite                overwrite plain files without removing them first
-#          --no-overwrite             remove  and  re-create  plain files instead of over‐ writing
-# -N,      --newer-than=SPEC          download only files newer than specified time
-#          --older-than=SPEC          download only files older than specified time
-#          --size-range=RANGE         download only files with size in specified range
-# -P,      --parallel[=N]             download N files in parallel
-#          --use-pget[-n=N]           use pget to transfer every single file
-#          --on-change=CMD            execute the command if anything has been changed
-#          --loop                     repeat mirror until no changes found
-# -i RX,   --include=RX               include matching files
-# -x RX,   --exclude=RX               exclude matching files
-# -I GP,   --include-glob=GP          include matching files
-# -X GP,   --exclude-glob=GP          exclude matching files
-#          --include-rx-from=FILE
-#          --exclude-rx-from=FILE
-#          --include-glob-from=FILE
-#          --exclude-glob-from=FILE   load include/exclude patterns from the file, one per line
-# -f FILE, --file=FILE                mirror   a   single  file  or  globbed  group  (e.g. /path/to/*.txt)
-# -F DIR,  --directory=DIR            mirror a single directory  or  globbed  group  (e.g. /path/to/dir*)
-# -O DIR,  --target-directory=DIR     target base path or URL
-# -v,      --verbose[=level]          verbose operation
-#          --log=FILE                 write lftp commands being executed to FILE
-#          --script=FILE              write lftp commands to FILE, but don't execute them
-#          --just-print, --dry-run    same as --script=-
-#          --max-errors=N             stop after this number of errors
-#          --skip-noaccess            don't try to transfer files with no read access.
-#          --use-cache                use cached directory listings
-#          --Remove-source-files      remove  source  files  after transfer (use with caution)
-#          --Remove-source-dirs       remove source files and directories  after  transfer (use  with  caution). Top  level  directory is not removed if it's name ends with a slash.
-#          --Move                     same as --Remove-source-dirs
-# -a                                  same as --allow-chown --allow-suid --no-umask
+# -c,	   --continue				  continue a mirror job if possible
+# -e,	   --delete					  delete files not present at remote site
+#		   --delete-first			  delete old files before transferring new ones
+#		   --depth-first			  descend	into  subdirectories  before  transferring files
+#		   --scan-all-first			  scan all directories recursively before transferring files
+# -s,	   --allow-suid				  set suid/sgid bits according to remote site
+#		   --allow-chown			  try to set owner and group on files
+#		   --ascii					  use ascii mode transfers (implies --ignore-size)
+#		   --ignore-time			  ignore time when deciding whether to download
+#		   --ignore-size			  ignore size when deciding whether to download
+#		   --only-missing			  download only missing files
+#		   --only-existing			  download only files already existing at target
+# -n,	   --only-newer				  download only newer files (-c won't work)
+#		   --upload-older			  upload even files older than remote ones
+#		   --transfer-all			  transfer	all	 files, even seemingly the same at the target site
+#		   --no-empty-dirs			  don't	   create	 empty	  directories	  (implies --depth-first)
+# -r,	   --no-recursion			  don't go to subdirectories
+#		   --recursion=MODE			  go to subdirectories on a condition
+#		   --no-symlinks			  don't create symbolic links
+# -p,	   --no-perms				  don't set file permissions
+#		   --no-umask				  don't apply umask to file modes
+# -R,	   --reverse				  reverse mirror (put files)
+# -L,	   --dereference			  download symbolic links as files
+#		   --overwrite				  overwrite plain files without removing them first
+#		   --no-overwrite			  remove  and  re-create  plain files instead of over‐ writing
+# -N,	   --newer-than=SPEC		  download only files newer than specified time
+#		   --older-than=SPEC		  download only files older than specified time
+#		   --size-range=RANGE		  download only files with size in specified range
+# -P,	   --parallel[=N]			  download N files in parallel
+#		   --use-pget[-n=N]			  use pget to transfer every single file
+#		   --on-change=CMD			  execute the command if anything has been changed
+#		   --loop					  repeat mirror until no changes found
+# -i RX,   --include=RX				  include matching files
+# -x RX,   --exclude=RX				  exclude matching files
+# -I GP,   --include-glob=GP		  include matching files
+# -X GP,   --exclude-glob=GP		  exclude matching files
+#		   --include-rx-from=FILE
+#		   --exclude-rx-from=FILE
+#		   --include-glob-from=FILE
+#		   --exclude-glob-from=FILE	  load include/exclude patterns from the file, one per line
+# -f FILE, --file=FILE				  mirror   a   single  file	 or	 globbed  group	 (e.g. /path/to/*.txt)
+# -F DIR,  --directory=DIR			  mirror a single directory	 or	 globbed  group	 (e.g. /path/to/dir*)
+# -O DIR,  --target-directory=DIR	  target base path or URL
+# -v,	   --verbose[=level]		  verbose operation
+#		   --log=FILE				  write lftp commands being executed to FILE
+#		   --script=FILE			  write lftp commands to FILE, but don't execute them
+#		   --just-print, --dry-run	  same as --script=-
+#		   --max-errors=N			  stop after this number of errors
+#		   --skip-noaccess			  don't try to transfer files with no read access.
+#		   --use-cache				  use cached directory listings
+#		   --Remove-source-files	  remove  source  files	 after transfer (use with caution)
+#		   --Remove-source-dirs		  remove source files and directories  after  transfer (use	 with  caution). Top  level	 directory is not removed if it's name ends with a slash.
+#		   --Move					  same as --Remove-source-dirs
+# -a								  same as --allow-chown --allow-suid --no-umask
 #
 [[ ! -z "$1" ]] && remote_dir="$1"
 #
@@ -111,24 +112,24 @@ trap "rm -f $lock_file" SIGINT SIGTERM
 if [[ -f "$lock_file" ]]
 #
 then
-    echo "$base_name is running already."
-    exit
+	echo "$base_name is running already."
+	exit
 else
-    touch "$lock_file"
-    lftp -e "debug -Tpo $tmpdir/$base_name.PID 0;set sftp:connect-program ssh -a -x -i $keydirectory/$keyname" -p "$port" -u "$username,$password" "sftp://$hostname" <<-EOF
-    set sftp:auto-confirm yes
-    set sftp:charset "utf-8"
-    set pget:default-n $default_pget
-    set mirror:parallel-transfer-count "$parallel"
-    set mirror:use-pget-n $pget_mirror
-    mirror $args --log="$tmpdir/$base_name.log" "$remote_dir" "$local_dir"
-    set cache:enable no
-    set show-status no
-    quit
-    EOF
-    #
-    rm -f "$tmpdir/$base_name.PID" "$lock_file" "$tmpdir/$base_name.log"
-    #
-    trap - SIGINT SIGTERM
-    exit
+	touch "$lock_file"
+	lftp -e "debug -Tpo $tmpdir/$base_name.PID 0;set sftp:connect-program ssh -a -x -i $keydirectory/$keyname" -p "$port" -u "$username,$password" "sftp://$hostname" <<-EOF
+	set sftp:auto-confirm yes
+	set sftp:charset "utf-8"
+	set pget:default-n $default_pget
+	set mirror:parallel-transfer-count "$parallel"
+	set mirror:use-pget-n $pget_mirror
+	mirror $args --log="$tmpdir/$base_name.log" "$remote_dir" "$local_dir"
+	set cache:enable no
+	set show-status no
+	quit
+	EOF
+	#
+	rm -f "$tmpdir/$base_name.PID" "$lock_file" "$tmpdir/$base_name.log"
+	#
+	trap - SIGINT SIGTERM
+	exit
 fi
