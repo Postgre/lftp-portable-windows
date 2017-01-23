@@ -7,9 +7,13 @@ I periodically update the lftp binaries and dll files and push them into the rep
 
 ownership and deletion issues: double click on the "troubleshooting - ownership.bat" and accept with Y. Then delete the folder.
 
-There is no conf/rc file with this set-up. You need to use an lftp scripts with your required options hardcoded and call that in ConEmu. It pretty much works out the same anyway.
+To fix files you cannot delete from the recycle bin run the "troubleshooting - ownership - recycle bin.bat" by right clicking and running as admin.
 
 If you keep seeing that the lftp script is already running but you know it isn't, check the /tmp folder and delete the lock file then try again.
+
+# Configuration
+
+There is no conf/rc file with this set-up. You need to use an lftp scripts with your required options hardcoded and call that in ConEmu. It pretty much works out the same anyway.
 
 # Directories:
 
