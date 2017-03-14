@@ -1,6 +1,6 @@
  ConEmuTh.x64
 
- Timestamp is 587fecd1 (Thu Jan 19 01:31:45 2017)
+ Timestamp is 58bcbe17 (Mon Mar  6 04:40:39 2017)
 
  Preferred load address is 0000000180000000
 
@@ -81,8 +81,8 @@
  0001:00000ac4       ?ModuleName@@YAPEB_WPEB_W@Z 0000000180001ac4 f   ConEmuCheck.obj
  0001:00000b64       ?StringCchCopyW@@YAJPEA_W_KPEB_W@Z 0000000180001b64 f i ConEmuCheck.obj
  0001:00000bdc       ProcessSynchroEventW       0000000180001bdc f   ConEmuTh.obj
- 0001:00000be4       ?ExitFARW3@@YAXPEAX@Z      0000000180001be4 f   ConEmuTh.obj
  0001:00000be4       ExitFARW                   0000000180001be4 f   ConEmuTh.obj
+ 0001:00000be4       ?ExitFARW3@@YAXPEAX@Z      0000000180001be4 f   ConEmuTh.obj
  0001:00000c1c       ??_G?$MFileMapping@Utag_DetectedDialog@@@@QEAAPEAXI@Z 0000000180001c1c f i ConEmuTh.obj
  0001:00000df4       ?CheckConEmu@@YAHH@Z       0000000180001df4 f   ConEmuTh.obj
  0001:00000efc       ?CheckPanelSettings@@YAHH@Z 0000000180001efc f   ConEmuTh.obj
@@ -176,15 +176,15 @@
  0001:00005844       ?SetCurrentPanelItemW2800@@YAXH_J0@Z 0000000180006844 f   ConEmuTh2800.obj
  0001:00005970       ?SetCurrentPanelItemW2800Int@@YAXH_J0@Z 0000000180006970 f   ConEmuTh2800.obj
  0001:00005a98       ?SetStartupInfoW2800@@YAXPEAX@Z 0000000180006a98 f   ConEmuTh2800.obj
- 0001:00005bc8       __except_validate_context_record 0000000180006bc8 f   libvcruntime:jbcxrval.obj
- 0001:00005bc8       ?ApplyChanges@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEAPEAUIMAGE_CACHE_INFO@@AEBQEAU2@@Z 0000000180006bc8 f   ImgCache.obj
  0001:00005bc8       ?OnThreadStopped@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXXZ 0000000180006bc8 f   ImgCache.obj
- 0001:00005bc8       ?SettingsLoadOtherW1900@@YAXXZ 0000000180006bc8 f   ConEmuTh1900.obj
- 0001:00005bc8       ?SettingsLoadOtherW2800@@YAXXZ 0000000180006bc8 f   ConEmuTh2800.obj
+ 0001:00005bc8       ?OnItemReady@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEAPEAUIMAGE_CACHE_INFO@@_J@Z 0000000180006bc8 f   ImgCache.obj
+ 0001:00005bc8       ?ApplyChanges@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEAPEAUIMAGE_CACHE_INFO@@AEBQEAU2@@Z 0000000180006bc8 f   ImgCache.obj
  0001:00005bc8       _guard_check_icall_nop     0000000180006bc8 f   LIBCMT:guard_support.obj
  0001:00005bc8       ?LoadPanelItemInfoA@@YAXPEAUCeFullPanelInfo@@_J@Z 0000000180006bc8 f   ConEmuThA.obj
+ 0001:00005bc8       __except_validate_context_record 0000000180006bc8 f   libvcruntime:jbcxrval.obj
+ 0001:00005bc8       ?SettingsLoadOtherW2800@@YAXXZ 0000000180006bc8 f   ConEmuTh2800.obj
  0001:00005bc8       ?OnItemFailed@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEAPEAUIMAGE_CACHE_INFO@@_J@Z 0000000180006bc8 f   ImgCache.obj
- 0001:00005bc8       ?OnItemReady@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEAPEAUIMAGE_CACHE_INFO@@_J@Z 0000000180006bc8 f   ImgCache.obj
+ 0001:00005bc8       ?SettingsLoadOtherW1900@@YAXXZ 0000000180006bc8 f   ConEmuTh1900.obj
  0001:00005bc8       ?FreeItem@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAAXAEBQEAUIMAGE_CACHE_INFO@@@Z 0000000180006bc8 f   ImgCache.obj
  0001:00005bcc       ?SettingsLoadW2800@@YAHPEB_WPEAK@Z 0000000180006bcc f   ConEmuTh2800.obj
  0001:00005ca0       ?SettingsSaveW2800@@YAXPEB_WPEAK@Z 0000000180006ca0 f   ConEmuTh2800.obj
@@ -278,8 +278,8 @@
  0001:0000baf0       ?IsEqual@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAA_NAEBQEAUIMAGE_CACHE_INFO@@_J01@Z 000000018000caf0 f i ImgCache.obj
  0001:0000bb10       ?IsEqual@CImgLoader@@UEAA_NAEAPEBUIMAGE_CACHE_INFO@@_JAEAPEAU2@1@Z 000000018000cb10 f i ImgCache.obj
  0001:0000bb28       ?IsStopRequested@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@UEAA_NAEBQEAUIMAGE_CACHE_INFO@@@Z 000000018000cb28 f i ImgCache.obj
- 0001:0000bb38       ?IsTerminationRequested@CImgLoader@@UEAA_NXZ 000000018000cb38 f i ImgCache.obj
  0001:0000bb38       ?IsTerminationRequested@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAA_NXZ 000000018000cb38 f i ImgCache.obj
+ 0001:0000bb38       ?IsTerminationRequested@CImgLoader@@UEAA_NXZ 000000018000cb38 f i ImgCache.obj
  0001:0000bb3c       ?LoadModules@CImgCache@@IEAAXXZ 000000018000cb3c f   ImgCache.obj
  0001:0000bdf8       ?LoadShellIcon@CImgCache@@QEAAHPEAUIMAGE_CACHE_INFO@@H@Z 000000018000cdf8 f   ImgCache.obj
  0001:0000c114       ?LoadThumbnail@CImgCache@@QEAAHPEAUIMAGE_CACHE_INFO@@@Z 000000018000d114 f   ImgCache.obj
@@ -296,8 +296,8 @@
  0001:0000d0f8       ?Reset@CImgCache@@QEAAXXZ  000000018000e0f8 f   ImgCache.obj
  0001:0000d2cc       ?SetCacheLocation@CImgCache@@QEAAXPEB_W@Z 000000018000e2cc f   ImgCache.obj
  0001:0000d34c       ??2@YAPEAX_K@Z             000000018000e34c f   Memory.obj
- 0001:0000d380       ??3@YAXPEAX@Z              000000018000e380 f   Memory.obj
  0001:0000d380       ??_V@YAXPEAX@Z             000000018000e380 f   Memory.obj
+ 0001:0000d380       ??3@YAXPEAX@Z              000000018000e380 f   Memory.obj
  0001:0000d388       ??_U@YAPEAX_K@Z            000000018000e388 f   Memory.obj
  0001:0000d388       ?xf_malloc@@YAPEAX_K@Z     000000018000e388 f   Memory.obj
  0001:0000d39c       ?HeapDeinitialize@@YAXXZ   000000018000e39c f   Memory.obj
@@ -331,8 +331,8 @@
  0001:0000dfb0       ??0MSectionLockSimple@@QEAA@XZ 000000018000efb0 f   MSectionSimple.obj
  0001:0000dfbc       ??0MSectionSimple@@QEAA@_N@Z 000000018000efbc f   MSectionSimple.obj
  0001:0000dff4       ??1MSectionLockSimple@@QEAA@XZ 000000018000eff4 f   MSectionSimple.obj
- 0001:0000e008       ??1MSectionSimple@@QEAA@XZ 000000018000f008 f   MSectionSimple.obj
  0001:0000e008       ?Close@MSectionSimple@@QEAAXXZ 000000018000f008 f   MSectionSimple.obj
+ 0001:0000e008       ??1MSectionSimple@@QEAA@XZ 000000018000f008 f   MSectionSimple.obj
  0001:0000e028       ?Enter@MSectionSimple@@QEAAXXZ 000000018000f028 f   MSectionSimple.obj
  0001:0000e030       ?Init@MSectionSimple@@QEAAXXZ 000000018000f030 f   MSectionSimple.obj
  0001:0000e050       ?Leave@MSectionSimple@@QEAAXXZ 000000018000f050 f   MSectionSimple.obj
@@ -430,8 +430,8 @@
  0001:0001349c       __isa_available_init       000000018001449c f   LIBCMT:_cpu_disp_.obj
  0001:00013664       _get_startup_argv_mode     0000000180014664 f   LIBCMT:argv_mode.obj
  0001:0001366c       __scrt_is_ucrt_dll_in_use  000000018001466c f   LIBCMT:ucrt_detection.obj
- 0001:00013690       memcpy                     0000000180014690 f   libvcruntime:memcpy.obj
  0001:00013690       memmove                    0000000180014690 f   libvcruntime:memcpy.obj
+ 0001:00013690       memcpy                     0000000180014690 f   libvcruntime:memcpy.obj
  0001:00013ac8       strrchr                    0000000180014ac8 f   libvcruntime:strrchr.obj
  0001:00013c08       wcschr                     0000000180014c08 f   libvcruntime:wcschr.obj
  0001:00013c9c       wcsrchr                    0000000180014c9c f   libvcruntime:wcsrchr.obj
@@ -543,9 +543,9 @@
  0001:00017c0c       _setmbcp_nolock            0000000180018c0c f   libucrt:mbctype.obj
  0001:00017f2c       _ismbblead                 0000000180018f2c f   libucrt:ismbbyte.obj
  0001:00017f40       __acrt_initialize_command_line 0000000180018f40 f   libucrt:argv_data.obj
- 0001:00017f68       ?CheckHighPriority@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAA_NAEBQEAUIMAGE_CACHE_INFO@@@Z 0000000180018f68 f   ImgCache.obj
- 0001:00017f68       ?CheckHighPriority@CImgLoader@@UEAA_NAEAPEBUIMAGE_CACHE_INFO@@@Z 0000000180018f68 f   ImgCache.obj
  0001:00017f68       __acrt_uninitialize_command_line 0000000180018f68 f   libucrt:argv_data.obj
+ 0001:00017f68       ?CheckHighPriority@CImgLoader@@UEAA_NAEAPEBUIMAGE_CACHE_INFO@@@Z 0000000180018f68 f   ImgCache.obj
+ 0001:00017f68       ?CheckHighPriority@?$CQueueProcessor@PEAUIMAGE_CACHE_INFO@@@@MEAA_NAEBQEAUIMAGE_CACHE_INFO@@@Z 0000000180018f68 f   ImgCache.obj
  0001:00017f68       ?Filter@?$MToolHelp@UtagPROCESSENTRY32W@@$1?Process32FirstW@@YAHPEAXPEAU1@@Z$1?Process32NextW@@YAH01@Z@@MEAA_NPEAUtagPROCESSENTRY32W@@@Z 0000000180018f68 f   MProcess.obj
  0001:00017f6c       __dcrt_get_narrow_environment_from_os 0000000180018f6c f   libucrt:get_environment_from_os.obj
  0001:00018070       _recalloc                  0000000180019070 f   libucrt:recalloc.obj
@@ -652,8 +652,8 @@
  0001:0001c538       __report_gsfailure         000000018001d538 f   LIBCMT:gs_report.obj
  0001:0001c60c       __report_rangecheckfailure 000000018001d60c f   LIBCMT:gs_report.obj
  0001:0001c620       __report_securityfailure   000000018001d620 f   LIBCMT:gs_report.obj
- 0001:0001c7b0       __chkstk                   000000018001d7b0 f   LIBCMT:_chkstk_.obj
  0001:0001c7b0       _alloca_probe              000000018001d7b0 f   LIBCMT:_chkstk_.obj
+ 0001:0001c7b0       __chkstk                   000000018001d7b0 f   LIBCMT:_chkstk_.obj
  0001:0001c820       _guard_dispatch_icall_nop  000000018001d820 f   LIBCMT:_guard_dispatch_.obj
  0002:00000000       __imp_RegSetValueExW       000000018001e000     advapi32:ADVAPI32.dll
  0002:00000008       __imp_RegQueryValueExW     000000018001e008     advapi32:ADVAPI32.dll

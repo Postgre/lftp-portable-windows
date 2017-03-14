@@ -1,6 +1,6 @@
  ConEmuLn
 
- Timestamp is 587feb79 (Thu Jan 19 01:26:01 2017)
+ Timestamp is 58bcbcc1 (Mon Mar 06 04:34:57 2017)
 
  Preferred load address is 10000000
 
@@ -80,28 +80,28 @@
  0001:00002395       ?SettingsLoadW1900@@YIXXZ  10003395 f   ConEmuLn1900.obj
  0001:00002486       ?SettingsSaveW1900@@YIXXZ  10003486 f   ConEmuLn1900.obj
  0001:0000254f       _GetGlobalInfoW@4          1000354f f   ConEmuLn2800.obj
- 0001:000025e2       ?GetPluginInfoW2800@@YIXPAX@Z 100035e2 f   ConEmuLn2800.obj
- 0001:00002643       ?SetStartupInfoW2800@@YIXPAX@Z 10003643 f   ConEmuLn2800.obj
- 0001:00002731       ?ExitFARW2800@@YIXXZ       10003731 f   ConEmuLn2800.obj
- 0001:00002760       ?GetMsgW2800@@YIPB_WH@Z    10003760 f   ConEmuLn2800.obj
- 0001:000030bc       ?ConfigureW2800@@YIHH@Z    100040bc f   ConEmuLn2800.obj
- 0001:000030cd       ?SettingsLoadW2800@@YIXXZ  100040cd f   ConEmuLn2800.obj
- 0001:000031ad       ?SettingsSaveW2800@@YIXXZ  100041ad f   ConEmuLn2800.obj
- 0001:0000326c       _GetMinFarVersion@0        1000426c f   ConEmuLnA.obj
- 0001:0000329b       _SetStartupInfo@4          1000429b f   ConEmuLnA.obj
- 0001:0000340d       _GetPluginInfo@4           1000440d f   ConEmuLnA.obj
- 0001:00003476       _ExitFAR@0                 10004476 f   ConEmuLnA.obj
- 0001:00003de1       _Configure@4               10004de1 f   ConEmuLnA.obj
- 0001:00003df6       _OpenPlugin@8              10004df6 f   ConEmuLnA.obj
- 0001:00003e0c       ?SettingsLoadA@@YIXXZ      10004e0c f   ConEmuLnA.obj
- 0001:00003e17       ?SettingsSaveA@@YIXXZ      10004e17 f   ConEmuLnA.obj
- 0001:00003e22       ?HeapInitialize@@YI_NXZ    10004e22 f   Memory.obj
- 0001:00003e48       ?HeapDeinitialize@@YIXXZ   10004e48 f   Memory.obj
- 0001:00003e60       ?xf_calloc@@YAPAXII@Z      10004e60 f   Memory.obj
- 0001:00003e79       ?xf_free@@YAXPAX@Z         10004e79 f   Memory.obj
- 0001:00003e98       _VerQueryValueW@16         10004e98 f   version:VERSION.dll
- 0001:00003e9e       _GetFileVersionInfoW@16    10004e9e f   version:VERSION.dll
- 0001:00003ea4       _GetFileVersionInfoSizeW@8 10004ea4 f   version:VERSION.dll
+ 0001:000025db       ?GetPluginInfoW2800@@YIXPAX@Z 100035db f   ConEmuLn2800.obj
+ 0001:0000263c       ?SetStartupInfoW2800@@YIXPAX@Z 1000363c f   ConEmuLn2800.obj
+ 0001:0000272a       ?ExitFARW2800@@YIXXZ       1000372a f   ConEmuLn2800.obj
+ 0001:00002759       ?GetMsgW2800@@YIPB_WH@Z    10003759 f   ConEmuLn2800.obj
+ 0001:000030b5       ?ConfigureW2800@@YIHH@Z    100040b5 f   ConEmuLn2800.obj
+ 0001:000030c6       ?SettingsLoadW2800@@YIXXZ  100040c6 f   ConEmuLn2800.obj
+ 0001:000031a6       ?SettingsSaveW2800@@YIXXZ  100041a6 f   ConEmuLn2800.obj
+ 0001:00003265       _GetMinFarVersion@0        10004265 f   ConEmuLnA.obj
+ 0001:00003294       _SetStartupInfo@4          10004294 f   ConEmuLnA.obj
+ 0001:00003406       _GetPluginInfo@4           10004406 f   ConEmuLnA.obj
+ 0001:0000346f       _ExitFAR@0                 1000446f f   ConEmuLnA.obj
+ 0001:00003dda       _Configure@4               10004dda f   ConEmuLnA.obj
+ 0001:00003def       _OpenPlugin@8              10004def f   ConEmuLnA.obj
+ 0001:00003e05       ?SettingsLoadA@@YIXXZ      10004e05 f   ConEmuLnA.obj
+ 0001:00003e10       ?SettingsSaveA@@YIXXZ      10004e10 f   ConEmuLnA.obj
+ 0001:00003e1b       ?HeapInitialize@@YI_NXZ    10004e1b f   Memory.obj
+ 0001:00003e41       ?HeapDeinitialize@@YIXXZ   10004e41 f   Memory.obj
+ 0001:00003e59       ?xf_calloc@@YAPAXII@Z      10004e59 f   Memory.obj
+ 0001:00003e72       ?xf_free@@YAXPAX@Z         10004e72 f   Memory.obj
+ 0001:00003e90       _VerQueryValueW@16         10004e90 f   version:VERSION.dll
+ 0001:00003e96       _GetFileVersionInfoW@16    10004e96 f   version:VERSION.dll
+ 0001:00003e9c       _GetFileVersionInfoSizeW@8 10004e9c f   version:VERSION.dll
  0001:00003eb0       _strrchr                   10004eb0 f   LIBCMT:strrchr.obj
  0001:00003ee0       __SEH_prolog               10004ee0 f   LIBCMT:sehprolg.obj
  0001:00003f1b       __SEH_epilog               10004f1b f   LIBCMT:sehprolg.obj
@@ -648,11 +648,11 @@
  0001:00001128       ?ConfigureProc@@YIHH@Z     10002128 f   ConEmuLn995.obj
  0001:00001a74       ?ConfigDlgProc@@YGHPAXHH0@Z 10002a74 f   ConEmuLn1900.obj
  0001:00001b93       ?ConfigureProc@@YIHH@Z     10002b93 f   ConEmuLn1900.obj
- 0001:0000277f       ?ConfigDlgProc@@YGHPAXHH0@Z 1000377f f   ConEmuLn2800.obj
- 0001:0000289e       ?ConfigureProc@@YIHH@Z     1000389e f   ConEmuLn2800.obj
- 0001:000034c1       ?GetMsg@@YIPADH@Z          100044c1 f   ConEmuLnA.obj
- 0001:000034d9       ?ConfigDlgProc@@YGJPAXHHJ@Z 100044d9 f   ConEmuLnA.obj
- 0001:000035fc       ?ConfigureProc@@YIHH@Z     100045fc f   ConEmuLnA.obj
+ 0001:00002778       ?ConfigDlgProc@@YGHPAXHH0@Z 10003778 f   ConEmuLn2800.obj
+ 0001:00002897       ?ConfigureProc@@YIHH@Z     10003897 f   ConEmuLn2800.obj
+ 0001:000034ba       ?GetMsg@@YIPADH@Z          100044ba f   ConEmuLnA.obj
+ 0001:000034d2       ?ConfigDlgProc@@YGJPAXHHJ@Z 100044d2 f   ConEmuLnA.obj
+ 0001:000035f5       ?ConfigureProc@@YIHH@Z     100045f5 f   ConEmuLnA.obj
  0001:0000458c       ?wcstoxl@@YAKPAUlocaleinfo_struct@@PB_WPAPB_WHH@Z 1000558c f   LIBCMT:wcstol.obj
  0001:000047b2       ?strtoxl@@YAKPAUlocaleinfo_struct@@PBDPAPBDHH@Z 100057b2 f   LIBCMT:strtol.obj
  0001:00004ba0       ___DllMainCRTStartup       10005ba0 f   LIBCMT:dllcrt0.obj
