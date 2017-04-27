@@ -1,6 +1,6 @@
  ConEmu
 
- Timestamp is 58bcbc9e (Mon Mar 06 04:34:22 2017)
+ Timestamp is 58e21ae5 (Mon Apr 03 12:50:29 2017)
 
  Preferred load address is 10000000
 
@@ -32,7 +32,7 @@
  0002:000069b0 000003f0H .idata$4                DATA
  0002:00006da0 00001226H .idata$6                DATA
  0002:00007fd0 000002ddH .edata                  DATA
- 0003:00000000 00000e50H .data                   DATA
+ 0003:00000000 00000e60H .data                   DATA
  0003:00000e60 0000a48cH .bss                    DATA
  0004:00000000 00000058H .rsrc$01                DATA
  0004:00000060 00000308H .rsrc$02                DATA
@@ -179,115 +179,115 @@
  0001:000065c0       ??$wcscat_c@$0BAF@@@YIHAAY0BAF@_WPB_W@Z 100075c0 f i ConEmuCheckEx.obj
  0001:000065f0       ?StringCchCatW@@YGJPA_WIPB_W@Z 100075f0 f i ConEmuCheckEx.obj
  0001:00006710       ?StartupHooks@@YI_NPAUHINSTANCE__@@@Z 10007710 f   ConEmuInjects.obj
- 0001:00006ae0       ?ShutdownHooks@@YIXXZ      10007ae0 f   ConEmuInjects.obj
- 0001:00006c90       ??$wcscpy_c@$0EA@@@YIHAAY0EA@_WPB_W@Z 10007c90 f i ConEmuInjects.obj
- 0001:00006da0       _DllMain@12                10007da0 f   ConEmuPlugin.obj
- 0001:00006de0       ?GetPluginInfo@@YGXPAX@Z   10007de0 f   ConEmuPlugin.obj
- 0001:00006e50       ?GetPluginInfoW@@YGXPAX@Z  10007e50 f   ConEmuPlugin.obj
- 0001:00006e80       ?IsConsoleActive@@YGHXZ    10007e80 f   ConEmuPlugin.obj
- 0001:00006ee0       ?GetFarHWND2@@YGPAUHWND__@@H@Z 10007ee0 f   ConEmuPlugin.obj
- 0001:00006f50       ?GetFarHWND@@YGPAUHWND__@@XZ 10007f50 f   ConEmuPlugin.obj
- 0001:00006f60       ?IsTerminalMode@@YGHXZ     10007f60 f   ConEmuPlugin.obj
- 0001:00006f70       ?GetFarVersion@@YGXPAUFarVersion@@@Z 10007f70 f   ConEmuPlugin.obj
- 0001:00006fa0       ?RegisterPanelView@@YGHPAUPanelViewInit@@@Z 10007fa0 f   ConEmuPlugin.obj
- 0001:00007190       ?RegisterBackground@@YGHPAURegisterBackgroundArg@@@Z 10008190 f   ConEmuPlugin.obj
- 0001:00007220       ?SyncExecute@@YGHPAUHINSTANCE__@@P6GXJ@ZJ@Z 10008220 f   ConEmuPlugin.obj
- 0001:00007270       ?ActivateConsole@@YGHXZ    10008270 f   ConEmuPlugin.obj
- 0001:00007300       ??4HWND2@@QAEAAU0@PAUHWND__@@@Z 10008300 f i ConEmuPlugin.obj
- 0001:00007320       ?SetStartupInfo@@YGXPAX@Z  10008320 f   ConEmuPlugin.obj
- 0001:00007390       _SetStartupInfoW@4         10008390 f   ConEmuPlugin.obj
- 0001:000073c0       ?GetMinFarVersion@@YGHXZ   100083c0 f   ConEmuPlugin.obj
- 0001:00007410       _GetMinFarVersionW@0       10008410 f   ConEmuPlugin.obj
- 0001:00007420       _ProcessSynchroEventW@8    10008420 f   ConEmuPlugin.obj
- 0001:00007440       ?ProcessSynchroEventW3@@YGHPAX@Z 10008440 f   ConEmuPlugin.obj
- 0001:00007470       ?ProcessEditorEvent@@YGHHPAX@Z 10008470 f   ConEmuPlugin.obj
- 0001:00007490       _ProcessEditorEventW@8     10008490 f   ConEmuPlugin.obj
- 0001:000074b0       ?ProcessEditorEventW3@@YGHPAX@Z 100084b0 f   ConEmuPlugin.obj
- 0001:000074e0       ?ProcessViewerEvent@@YGHHPAX@Z 100084e0 f   ConEmuPlugin.obj
- 0001:00007500       _ProcessViewerEventW@8     10008500 f   ConEmuPlugin.obj
- 0001:00007520       ?ProcessViewerEventW3@@YGHPAX@Z 10008520 f   ConEmuPlugin.obj
- 0001:00007550       ?ProcessEditorInput@@YGHPBU_INPUT_RECORD@@@Z 10008550 f   ConEmuPlugin.obj
- 0001:00007570       _ProcessEditorInputW@4     10008570 f   ConEmuPlugin.obj
- 0001:000075a0       ?OpenPlugin@@YGPAXHH@Z     100085a0 f   ConEmuPlugin.obj
- 0001:000075c0       _OpenPluginW@8             100085c0 f   ConEmuPlugin.obj
- 0001:00007600       ?OpenW@@YGPAXPBX@Z         10008600 f   ConEmuPlugin.obj
- 0001:00007630       ?ExitFAR@@YGXXZ            10008630 f   ConEmuPlugin.obj
- 0001:00007680       _ExitFARW@0                10008680 f   ConEmuPlugin.obj
- 0001:000076d0       ?ExitFARW3@@YGXPAX@Z       100086d0 f   ConEmuPlugin.obj
- 0001:00007730       ?SetupExportsFar3@@YIXXZ   10008730 f   ConEmuPlugin.obj
- 0001:00007950       ?_calloc@@YIPAXII@Z        10008950 f   ConEmuPlugin.obj
- 0001:00007970       ?_malloc@@YIPAXI@Z         10008970 f   ConEmuPlugin.obj
- 0001:00007990       ?_free@@YIXPAX@Z           10008990 f   ConEmuPlugin.obj
- 0001:000079b0       ??0CPluginW1900@@QAE@XZ    100089b0 f   ConEmuPlugin1900.obj
- 0001:00007c40       ??_GCPluginW1900@@UAEPAXI@Z 10008c40 f i ConEmuPlugin1900.obj
- 0001:00007c40       ??_ECPluginW1900@@UAEPAXI@Z 10008c40 f i ConEmuPlugin1900.obj
- 0001:00007c70       ??1CPluginW1900@@UAE@XZ    10008c70 f i ConEmuPlugin1900.obj
- 0001:00007c90       ?ProcessEditorEventPtr@CPluginW1900@@UAEHPAX@Z 10008c90 f   ConEmuPlugin1900.obj
- 0001:00007cc0       ?ProcessViewerEventPtr@CPluginW1900@@UAEHPAX@Z 10008cc0 f   ConEmuPlugin1900.obj
- 0001:00007cf0       ?ProcessSynchroEventPtr@CPluginW1900@@UAEHPAX@Z 10008cf0 f   ConEmuPlugin1900.obj
- 0001:00007d20       ?GetPanelDir@CPluginW1900@@UAEPA_WKPA_WH@Z 10008d20 f   ConEmuPlugin1900.obj
- 0001:00007eb0       ?GetPanelInfo@CPluginW1900@@UAE_NKPAUCEPanelInfo@@@Z 10008eb0 f   ConEmuPlugin1900.obj
- 0001:00008330       ?GetPanelItemInfo@CPluginW1900@@UAE_NABUCEPanelInfo@@_NHAAU_WIN32_FIND_DATAW@@PAPA_W@Z 10009330 f   ConEmuPlugin1900.obj
- 0001:00008560       ?PanelControlApi@CPluginW1900@@UAEHPAXHH0@Z 10009560 f   ConEmuPlugin1900.obj
- 0001:000085b0       ?GetPluginInfoPtr@CPluginW1900@@UAEXPAX@Z 100095b0 f   ConEmuPlugin1900.obj
- 0001:00008630       ?SetStartupInfoPtr@CPluginW1900@@UAEXPAX@Z 10009630 f   ConEmuPlugin1900.obj
- 0001:000087a0       ?GetEditorModifiedState@CPluginW1900@@UAEKXZ 100097a0 f   ConEmuPlugin1900.obj
- 0001:000087e0       ?ProcessEditorInputPtr@CPluginW1900@@UAEHPBX@Z 100097e0 f   ConEmuPlugin1900.obj
- 0001:00008820       ?GetWindowCount@CPluginW1900@@UAEHXZ 10009820 f   ConEmuPlugin1900.obj
- 0001:00008870       ?UpdateConEmuTabsApi@CPluginW1900@@UAE_NH@Z 10009870 f   ConEmuPlugin1900.obj
- 0001:00008e50       ?ExitFar@CPluginW1900@@UAEXXZ 10009e50 f   ConEmuPlugin1900.obj
- 0001:00008ee0       ?ShowMessage@CPluginW1900@@UAEHPB_WH_N@Z 10009ee0 f   ConEmuPlugin1900.obj
- 0001:00008f90       ?GetMsg@CPluginW1900@@UAEPB_WHPA_WI@Z 10009f90 f   ConEmuPlugin1900.obj
- 0001:00009010       ?SetWindow@CPluginW1900@@UAEXH@Z 1000a010 f   ConEmuPlugin1900.obj
- 0001:00009070       ?PostMacroApi@CPluginW1900@@UAEXPB_WPAU_INPUT_RECORD@@_N@Z 1000a070 f   ConEmuPlugin1900.obj
- 0001:000097c0       ?wcsstr@@YAPA_WPA_WPB_W@Z  1000a7c0 f i ConEmuPlugin1900.obj
- 0001:000097e0       ?ShowPluginMenu@CPluginW1900@@UAEHPAUConEmuPluginMenuItem@@HH@Z 1000a7e0 f   ConEmuPlugin1900.obj
- 0001:000099d0       ?OpenEditor@CPluginW1900@@UAE_NPB_W_N11HH@Z 1000a9d0 f   ConEmuPlugin1900.obj
- 0001:00009b20       ?ExecuteSynchroApi@CPluginW1900@@UAE_NXZ 1000ab20 f   ConEmuPlugin1900.obj
- 0001:00009b60       ?WaitEndSynchro@CPluginW1900@@UAEXXZ 1000ab60 f   ConEmuPlugin1900.obj
- 0001:00009b70       ?StopWaitEndSynchro@CPluginW1900@@UAEXXZ 1000ab70 f   ConEmuPlugin1900.obj
- 0001:00009b80       ?IsMacroActive@CPluginW1900@@UAE_NXZ 1000ab80 f   ConEmuPlugin1900.obj
- 0001:00009bd0       ?GetMacroArea@CPluginW1900@@UAEHXZ 1000abd0 f   ConEmuPlugin1900.obj
- 0001:00009c00       ?RedrawAll@CPluginW1900@@UAEXXZ 1000ac00 f   ConEmuPlugin1900.obj
- 0001:00009c40       ?InputBox@CPluginW1900@@UAE_NPB_W000AAPA_W@Z 1000ac40 f   ConEmuPlugin1900.obj
- 0001:00009cc0       ?ShowUserScreen@CPluginW1900@@UAEX_N@Z 1000acc0 f   ConEmuPlugin1900.obj
- 0001:00009d10       ?LoadFarColors@CPluginW1900@@UAEXAAY0BAA@E@Z 1000ad10 f   ConEmuPlugin1900.obj
- 0001:00009ed0       ?FarColor_3_2@@YIEABUFarColor@@@Z 1000aed0 f i ConEmuPlugin1900.obj
- 0001:00009ff0       ?Color2FgIndex@Far3Color@@SIXKAAGPBK@Z 1000aff0 f i ConEmuPlugin1900.obj
- 0001:0000a130       ?Max@Far3Color@@SIHHH@Z    1000b130 f i ConEmuPlugin1900.obj
- 0001:0000a160       ?GetStdIndex@Far3Color@@SIHKPBK@Z 1000b160 f i ConEmuPlugin1900.obj
- 0001:0000a1c0       ?GetStdPalette@Far3Color@@SIPBKXZ 1000b1c0 f i ConEmuPlugin1900.obj
- 0001:0000a1d0       ?Color2BgIndex@Far3Color@@SIXKHAAGPBK@Z 1000b1d0 f i ConEmuPlugin1900.obj
- 0001:0000a340       ?LoadFarSettings@CPluginW1900@@UAEXPAUCEFarInterfaceSettings@@PAUCEFarPanelSettings@@@Z 1000b340 f   ConEmuPlugin1900.obj
- 0001:0000a550       ?GetFarRect@CPluginW1900@@UAE_NAAU_SMALL_RECT@@@Z 1000b550 f   ConEmuPlugin1900.obj
- 0001:0000a5c0       ?CheckPanelExist@CPluginW1900@@UAE_NXZ 1000b5c0 f   ConEmuPlugin1900.obj
- 0001:0000a610       ?GetActiveWindowType@CPluginW1900@@UAEHXZ 1000b610 f   ConEmuPlugin1900.obj
- 0001:0000a6d0       ?GetWindowTypeName@CPluginW1900@@UAEPB_WH@Z 1000b6d0 f   ConEmuPlugin1900.obj
- 0001:0000a760       ?GuiMacroDlg@CPluginW1900@@UAEXXZ 1000b760 f   ConEmuPlugin1900.obj
- 0001:0000ad40       ?Open@CPluginW1900@@UAEPAXPBX@Z 1000bd40 f   ConEmuPlugin1900.obj
- 0001:0000aee0       _GetGlobalInfoW@4          1000bee0 f   ConEmuPlugin2800.obj
- 0001:0000b0c0       ??0CPluginW2800@@QAE@XZ    1000c0c0 f   ConEmuPlugin2800.obj
- 0001:0000b350       ??_ECPluginW2800@@UAEPAXI@Z 1000c350 f i ConEmuPlugin2800.obj
- 0001:0000b350       ??_GCPluginW2800@@UAEPAXI@Z 1000c350 f i ConEmuPlugin2800.obj
- 0001:0000b380       ??1CPluginW2800@@UAE@XZ    1000c380 f i ConEmuPlugin2800.obj
- 0001:0000b3a0       ?GetPanelDir@CPluginW2800@@UAEPA_WKPA_WH@Z 1000c3a0 f   ConEmuPlugin2800.obj
- 0001:0000b530       ?GetPanelInfo@CPluginW2800@@UAE_NKPAUCEPanelInfo@@@Z 1000c530 f   ConEmuPlugin2800.obj
- 0001:0000b9b0       ?GetPanelItemInfo@CPluginW2800@@UAE_NABUCEPanelInfo@@_NHAAU_WIN32_FIND_DATAW@@PAPA_W@Z 1000c9b0 f   ConEmuPlugin2800.obj
- 0001:0000bbe0       ?PanelControlApi@CPluginW2800@@UAEHPAXHH0@Z 1000cbe0 f   ConEmuPlugin2800.obj
- 0001:0000bc30       ?GetPluginInfoPtr@CPluginW2800@@UAEXPAX@Z 1000cc30 f   ConEmuPlugin2800.obj
- 0001:0000bcb0       ?SetStartupInfoPtr@CPluginW2800@@UAEXPAX@Z 1000ccb0 f   ConEmuPlugin2800.obj
- 0001:0000be20       ?GetEditorModifiedState@CPluginW2800@@UAEKXZ 1000ce20 f   ConEmuPlugin2800.obj
- 0001:0000be60       ?ProcessEditorEventPtr@CPluginW2800@@UAEHPAX@Z 1000ce60 f   ConEmuPlugin2800.obj
- 0001:0000be90       ?ProcessViewerEventPtr@CPluginW2800@@UAEHPAX@Z 1000ce90 f   ConEmuPlugin2800.obj
- 0001:0000bec0       ?ProcessSynchroEventPtr@CPluginW2800@@UAEHPAX@Z 1000cec0 f   ConEmuPlugin2800.obj
- 0001:0000bef0       ?ProcessEditorInputPtr@CPluginW2800@@UAEHPBX@Z 1000cef0 f   ConEmuPlugin2800.obj
- 0001:0000bf30       ?GetWindowCount@CPluginW2800@@UAEHXZ 1000cf30 f   ConEmuPlugin2800.obj
- 0001:0000bf80       ?UpdateConEmuTabsApi@CPluginW2800@@UAE_NH@Z 1000cf80 f   ConEmuPlugin2800.obj
- 0001:0000c800       ?ExitFar@CPluginW2800@@UAEXXZ 1000d800 f   ConEmuPlugin2800.obj
- 0001:0000c890       ?ShowMessage@CPluginW2800@@UAEHPB_WH_N@Z 1000d890 f   ConEmuPlugin2800.obj
- 0001:0000c940       ?GetMsg@CPluginW2800@@UAEPB_WHPA_WI@Z 1000d940 f   ConEmuPlugin2800.obj
- 0001:0000c9c0       ?SetWindow@CPluginW2800@@UAEXH@Z 1000d9c0 f   ConEmuPlugin2800.obj
- 0001:0000cab0       ?PostMacroApi@CPluginW2800@@UAEXPB_WPAU_INPUT_RECORD@@_N@Z 1000dab0 f   ConEmuPlugin2800.obj
+ 0001:00006b00       ?ShutdownHooks@@YIXXZ      10007b00 f   ConEmuInjects.obj
+ 0001:00006cb0       ??$wcscpy_c@$0EA@@@YIHAAY0EA@_WPB_W@Z 10007cb0 f i ConEmuInjects.obj
+ 0001:00006dc0       _DllMain@12                10007dc0 f   ConEmuPlugin.obj
+ 0001:00006e00       ?GetPluginInfo@@YGXPAX@Z   10007e00 f   ConEmuPlugin.obj
+ 0001:00006e70       ?GetPluginInfoW@@YGXPAX@Z  10007e70 f   ConEmuPlugin.obj
+ 0001:00006ea0       ?IsConsoleActive@@YGHXZ    10007ea0 f   ConEmuPlugin.obj
+ 0001:00006f00       ?GetFarHWND2@@YGPAUHWND__@@H@Z 10007f00 f   ConEmuPlugin.obj
+ 0001:00006f70       ?GetFarHWND@@YGPAUHWND__@@XZ 10007f70 f   ConEmuPlugin.obj
+ 0001:00006f80       ?IsTerminalMode@@YGHXZ     10007f80 f   ConEmuPlugin.obj
+ 0001:00006f90       ?GetFarVersion@@YGXPAUFarVersion@@@Z 10007f90 f   ConEmuPlugin.obj
+ 0001:00006fc0       ?RegisterPanelView@@YGHPAUPanelViewInit@@@Z 10007fc0 f   ConEmuPlugin.obj
+ 0001:000071b0       ?RegisterBackground@@YGHPAURegisterBackgroundArg@@@Z 100081b0 f   ConEmuPlugin.obj
+ 0001:00007240       ?SyncExecute@@YGHPAUHINSTANCE__@@P6GXJ@ZJ@Z 10008240 f   ConEmuPlugin.obj
+ 0001:00007290       ?ActivateConsole@@YGHXZ    10008290 f   ConEmuPlugin.obj
+ 0001:00007320       ??4HWND2@@QAEAAU0@PAUHWND__@@@Z 10008320 f i ConEmuPlugin.obj
+ 0001:00007340       ?SetStartupInfo@@YGXPAX@Z  10008340 f   ConEmuPlugin.obj
+ 0001:000073b0       _SetStartupInfoW@4         100083b0 f   ConEmuPlugin.obj
+ 0001:000073e0       ?GetMinFarVersion@@YGHXZ   100083e0 f   ConEmuPlugin.obj
+ 0001:00007430       _GetMinFarVersionW@0       10008430 f   ConEmuPlugin.obj
+ 0001:00007440       _ProcessSynchroEventW@8    10008440 f   ConEmuPlugin.obj
+ 0001:00007460       ?ProcessSynchroEventW3@@YGHPAX@Z 10008460 f   ConEmuPlugin.obj
+ 0001:00007490       ?ProcessEditorEvent@@YGHHPAX@Z 10008490 f   ConEmuPlugin.obj
+ 0001:000074b0       _ProcessEditorEventW@8     100084b0 f   ConEmuPlugin.obj
+ 0001:000074d0       ?ProcessEditorEventW3@@YGHPAX@Z 100084d0 f   ConEmuPlugin.obj
+ 0001:00007500       ?ProcessViewerEvent@@YGHHPAX@Z 10008500 f   ConEmuPlugin.obj
+ 0001:00007520       _ProcessViewerEventW@8     10008520 f   ConEmuPlugin.obj
+ 0001:00007540       ?ProcessViewerEventW3@@YGHPAX@Z 10008540 f   ConEmuPlugin.obj
+ 0001:00007570       ?ProcessEditorInput@@YGHPBU_INPUT_RECORD@@@Z 10008570 f   ConEmuPlugin.obj
+ 0001:00007590       _ProcessEditorInputW@4     10008590 f   ConEmuPlugin.obj
+ 0001:000075c0       ?OpenPlugin@@YGPAXHH@Z     100085c0 f   ConEmuPlugin.obj
+ 0001:000075e0       _OpenPluginW@8             100085e0 f   ConEmuPlugin.obj
+ 0001:00007620       ?OpenW@@YGPAXPBX@Z         10008620 f   ConEmuPlugin.obj
+ 0001:00007650       ?ExitFAR@@YGXXZ            10008650 f   ConEmuPlugin.obj
+ 0001:000076a0       _ExitFARW@0                100086a0 f   ConEmuPlugin.obj
+ 0001:000076f0       ?ExitFARW3@@YGXPAX@Z       100086f0 f   ConEmuPlugin.obj
+ 0001:00007750       ?SetupExportsFar3@@YIXXZ   10008750 f   ConEmuPlugin.obj
+ 0001:00007970       ?_calloc@@YIPAXII@Z        10008970 f   ConEmuPlugin.obj
+ 0001:00007990       ?_malloc@@YIPAXI@Z         10008990 f   ConEmuPlugin.obj
+ 0001:000079b0       ?_free@@YIXPAX@Z           100089b0 f   ConEmuPlugin.obj
+ 0001:000079d0       ??0CPluginW1900@@QAE@XZ    100089d0 f   ConEmuPlugin1900.obj
+ 0001:00007c60       ??_GCPluginW1900@@UAEPAXI@Z 10008c60 f i ConEmuPlugin1900.obj
+ 0001:00007c60       ??_ECPluginW1900@@UAEPAXI@Z 10008c60 f i ConEmuPlugin1900.obj
+ 0001:00007c90       ??1CPluginW1900@@UAE@XZ    10008c90 f i ConEmuPlugin1900.obj
+ 0001:00007cb0       ?ProcessEditorEventPtr@CPluginW1900@@UAEHPAX@Z 10008cb0 f   ConEmuPlugin1900.obj
+ 0001:00007ce0       ?ProcessViewerEventPtr@CPluginW1900@@UAEHPAX@Z 10008ce0 f   ConEmuPlugin1900.obj
+ 0001:00007d10       ?ProcessSynchroEventPtr@CPluginW1900@@UAEHPAX@Z 10008d10 f   ConEmuPlugin1900.obj
+ 0001:00007d40       ?GetPanelDir@CPluginW1900@@UAEPA_WKPA_WH@Z 10008d40 f   ConEmuPlugin1900.obj
+ 0001:00007ed0       ?GetPanelInfo@CPluginW1900@@UAE_NKPAUCEPanelInfo@@@Z 10008ed0 f   ConEmuPlugin1900.obj
+ 0001:00008350       ?GetPanelItemInfo@CPluginW1900@@UAE_NABUCEPanelInfo@@_NHAAU_WIN32_FIND_DATAW@@PAPA_W@Z 10009350 f   ConEmuPlugin1900.obj
+ 0001:00008580       ?PanelControlApi@CPluginW1900@@UAEHPAXHH0@Z 10009580 f   ConEmuPlugin1900.obj
+ 0001:000085d0       ?GetPluginInfoPtr@CPluginW1900@@UAEXPAX@Z 100095d0 f   ConEmuPlugin1900.obj
+ 0001:00008650       ?SetStartupInfoPtr@CPluginW1900@@UAEXPAX@Z 10009650 f   ConEmuPlugin1900.obj
+ 0001:000087c0       ?GetEditorModifiedState@CPluginW1900@@UAEKXZ 100097c0 f   ConEmuPlugin1900.obj
+ 0001:00008800       ?ProcessEditorInputPtr@CPluginW1900@@UAEHPBX@Z 10009800 f   ConEmuPlugin1900.obj
+ 0001:00008840       ?GetWindowCount@CPluginW1900@@UAEHXZ 10009840 f   ConEmuPlugin1900.obj
+ 0001:00008890       ?UpdateConEmuTabsApi@CPluginW1900@@UAE_NH@Z 10009890 f   ConEmuPlugin1900.obj
+ 0001:00008e70       ?ExitFar@CPluginW1900@@UAEXXZ 10009e70 f   ConEmuPlugin1900.obj
+ 0001:00008f00       ?ShowMessage@CPluginW1900@@UAEHPB_WH_N@Z 10009f00 f   ConEmuPlugin1900.obj
+ 0001:00008fb0       ?GetMsg@CPluginW1900@@UAEPB_WHPA_WI@Z 10009fb0 f   ConEmuPlugin1900.obj
+ 0001:00009030       ?SetWindow@CPluginW1900@@UAEXH@Z 1000a030 f   ConEmuPlugin1900.obj
+ 0001:00009090       ?PostMacroApi@CPluginW1900@@UAEXPB_WPAU_INPUT_RECORD@@_N@Z 1000a090 f   ConEmuPlugin1900.obj
+ 0001:000097e0       ?wcsstr@@YAPA_WPA_WPB_W@Z  1000a7e0 f i ConEmuPlugin1900.obj
+ 0001:00009800       ?ShowPluginMenu@CPluginW1900@@UAEHPAUConEmuPluginMenuItem@@HH@Z 1000a800 f   ConEmuPlugin1900.obj
+ 0001:000099f0       ?OpenEditor@CPluginW1900@@UAE_NPB_W_N11HH@Z 1000a9f0 f   ConEmuPlugin1900.obj
+ 0001:00009b40       ?ExecuteSynchroApi@CPluginW1900@@UAE_NXZ 1000ab40 f   ConEmuPlugin1900.obj
+ 0001:00009b80       ?WaitEndSynchro@CPluginW1900@@UAEXXZ 1000ab80 f   ConEmuPlugin1900.obj
+ 0001:00009b90       ?StopWaitEndSynchro@CPluginW1900@@UAEXXZ 1000ab90 f   ConEmuPlugin1900.obj
+ 0001:00009ba0       ?IsMacroActive@CPluginW1900@@UAE_NXZ 1000aba0 f   ConEmuPlugin1900.obj
+ 0001:00009bf0       ?GetMacroArea@CPluginW1900@@UAEHXZ 1000abf0 f   ConEmuPlugin1900.obj
+ 0001:00009c20       ?RedrawAll@CPluginW1900@@UAEXXZ 1000ac20 f   ConEmuPlugin1900.obj
+ 0001:00009c60       ?InputBox@CPluginW1900@@UAE_NPB_W000AAPA_W@Z 1000ac60 f   ConEmuPlugin1900.obj
+ 0001:00009ce0       ?ShowUserScreen@CPluginW1900@@UAEX_N@Z 1000ace0 f   ConEmuPlugin1900.obj
+ 0001:00009d30       ?LoadFarColors@CPluginW1900@@UAEXAAY0BAA@E@Z 1000ad30 f   ConEmuPlugin1900.obj
+ 0001:00009ef0       ?FarColor_3_2@@YIEABUFarColor@@@Z 1000aef0 f i ConEmuPlugin1900.obj
+ 0001:0000a000       ?Color2FgIndex@Far3Color@@SIXKAAGPBK@Z 1000b000 f i ConEmuPlugin1900.obj
+ 0001:0000a140       ?Max@Far3Color@@SIHHH@Z    1000b140 f i ConEmuPlugin1900.obj
+ 0001:0000a170       ?GetStdIndex@Far3Color@@SIHKPBK@Z 1000b170 f i ConEmuPlugin1900.obj
+ 0001:0000a1d0       ?GetStdPalette@Far3Color@@SIPBKXZ 1000b1d0 f i ConEmuPlugin1900.obj
+ 0001:0000a1e0       ?Color2BgIndex@Far3Color@@SIXKHAAGPBK@Z 1000b1e0 f i ConEmuPlugin1900.obj
+ 0001:0000a350       ?LoadFarSettings@CPluginW1900@@UAEXPAUCEFarInterfaceSettings@@PAUCEFarPanelSettings@@@Z 1000b350 f   ConEmuPlugin1900.obj
+ 0001:0000a560       ?GetFarRect@CPluginW1900@@UAE_NAAU_SMALL_RECT@@@Z 1000b560 f   ConEmuPlugin1900.obj
+ 0001:0000a5d0       ?CheckPanelExist@CPluginW1900@@UAE_NXZ 1000b5d0 f   ConEmuPlugin1900.obj
+ 0001:0000a620       ?GetActiveWindowType@CPluginW1900@@UAEHXZ 1000b620 f   ConEmuPlugin1900.obj
+ 0001:0000a6e0       ?GetWindowTypeName@CPluginW1900@@UAEPB_WH@Z 1000b6e0 f   ConEmuPlugin1900.obj
+ 0001:0000a770       ?GuiMacroDlg@CPluginW1900@@UAEXXZ 1000b770 f   ConEmuPlugin1900.obj
+ 0001:0000ad50       ?Open@CPluginW1900@@UAEPAXPBX@Z 1000bd50 f   ConEmuPlugin1900.obj
+ 0001:0000aef0       _GetGlobalInfoW@4          1000bef0 f   ConEmuPlugin2800.obj
+ 0001:0000b0d0       ??0CPluginW2800@@QAE@XZ    1000c0d0 f   ConEmuPlugin2800.obj
+ 0001:0000b360       ??_ECPluginW2800@@UAEPAXI@Z 1000c360 f i ConEmuPlugin2800.obj
+ 0001:0000b360       ??_GCPluginW2800@@UAEPAXI@Z 1000c360 f i ConEmuPlugin2800.obj
+ 0001:0000b390       ??1CPluginW2800@@UAE@XZ    1000c390 f i ConEmuPlugin2800.obj
+ 0001:0000b3b0       ?GetPanelDir@CPluginW2800@@UAEPA_WKPA_WH@Z 1000c3b0 f   ConEmuPlugin2800.obj
+ 0001:0000b540       ?GetPanelInfo@CPluginW2800@@UAE_NKPAUCEPanelInfo@@@Z 1000c540 f   ConEmuPlugin2800.obj
+ 0001:0000b9c0       ?GetPanelItemInfo@CPluginW2800@@UAE_NABUCEPanelInfo@@_NHAAU_WIN32_FIND_DATAW@@PAPA_W@Z 1000c9c0 f   ConEmuPlugin2800.obj
+ 0001:0000bbf0       ?PanelControlApi@CPluginW2800@@UAEHPAXHH0@Z 1000cbf0 f   ConEmuPlugin2800.obj
+ 0001:0000bc40       ?GetPluginInfoPtr@CPluginW2800@@UAEXPAX@Z 1000cc40 f   ConEmuPlugin2800.obj
+ 0001:0000bcc0       ?SetStartupInfoPtr@CPluginW2800@@UAEXPAX@Z 1000ccc0 f   ConEmuPlugin2800.obj
+ 0001:0000be30       ?GetEditorModifiedState@CPluginW2800@@UAEKXZ 1000ce30 f   ConEmuPlugin2800.obj
+ 0001:0000be70       ?ProcessEditorEventPtr@CPluginW2800@@UAEHPAX@Z 1000ce70 f   ConEmuPlugin2800.obj
+ 0001:0000bea0       ?ProcessViewerEventPtr@CPluginW2800@@UAEHPAX@Z 1000cea0 f   ConEmuPlugin2800.obj
+ 0001:0000bed0       ?ProcessSynchroEventPtr@CPluginW2800@@UAEHPAX@Z 1000ced0 f   ConEmuPlugin2800.obj
+ 0001:0000bf00       ?ProcessEditorInputPtr@CPluginW2800@@UAEHPBX@Z 1000cf00 f   ConEmuPlugin2800.obj
+ 0001:0000bf40       ?GetWindowCount@CPluginW2800@@UAEHXZ 1000cf40 f   ConEmuPlugin2800.obj
+ 0001:0000bf90       ?UpdateConEmuTabsApi@CPluginW2800@@UAE_NH@Z 1000cf90 f   ConEmuPlugin2800.obj
+ 0001:0000c810       ?ExitFar@CPluginW2800@@UAEXXZ 1000d810 f   ConEmuPlugin2800.obj
+ 0001:0000c8a0       ?ShowMessage@CPluginW2800@@UAEHPB_WH_N@Z 1000d8a0 f   ConEmuPlugin2800.obj
+ 0001:0000c950       ?GetMsg@CPluginW2800@@UAEPB_WHPA_WI@Z 1000d950 f   ConEmuPlugin2800.obj
+ 0001:0000c9d0       ?SetWindow@CPluginW2800@@UAEXH@Z 1000d9d0 f   ConEmuPlugin2800.obj
+ 0001:0000cac0       ?PostMacroApi@CPluginW2800@@UAEXPB_WPAU_INPUT_RECORD@@_N@Z 1000dac0 f   ConEmuPlugin2800.obj
  0001:0000ce60       ?ShowPluginMenu@CPluginW2800@@UAEHPAUConEmuPluginMenuItem@@HH@Z 1000de60 f   ConEmuPlugin2800.obj
  0001:0000d050       ?OpenEditor@CPluginW2800@@UAE_NPB_W_N11HH@Z 1000e050 f   ConEmuPlugin2800.obj
  0001:0000d1a0       ?ExecuteSynchroApi@CPluginW2800@@UAE_NXZ 1000e1a0 f   ConEmuPlugin2800.obj
@@ -2338,48 +2338,48 @@
  0003:0000011c       ?gnReqCommand@@3KA         1004a11c     ConEmuPluginBase.obj
  0003:00000120       ?lastModifiedStateW@@3HA   1004a120     ConEmuPluginBase.obj
  0003:00000124       ?gFarMode@@3UHookModeFar@@A 1004a124     ConEmuPluginBase.obj
- 0003:00000148       ?gpPluginMenu@@3PAUPluginAndMenuCommands@@A 1004a148     ConEmuPluginBase.obj
- 0003:00000208       ?g_TerminatedThreadIdx@@3JA 1004a208     WThreads.obj
- 0003:00000210       ___abort_behavior          1004a210     LIBCMT:abort.obj
- 0003:000002d0       ___flsindex                1004a2d0     LIBCMT:tidtable.obj
- 0003:000002d4       ___getvalueindex           1004a2d4     LIBCMT:tidtable.obj
- 0003:000002d8       ___initialmbcinfo          1004a2d8     LIBCMT:mbctype.obj
- 0003:000004f8       __mbctype                  1004a4f8     LIBCMT:mbctype.obj
- 0003:00000600       __mbcasemap                1004a600     LIBCMT:mbctype.obj
- 0003:00000700       ___ptmbcinfo               1004a700     LIBCMT:mbctype.obj
- 0003:000007fc       ___globallocalestatus      1004a7fc     LIBCMT:glstatus.obj
- 0003:00000800       ___clocalestr              1004a800     LIBCMT:nlsdata2.obj
- 0003:00000808       ___initiallocinfo          1004a808     LIBCMT:nlsdata2.obj
- 0003:000008e0       ___ptlocinfo               1004a8e0     LIBCMT:nlsdata2.obj
- 0003:000008e4       ___lc_clike                1004a8e4     LIBCMT:nlsdata2.obj
- 0003:000008e8       ___initiallocalestructinfo 1004a8e8     LIBCMT:nlsdata2.obj
- 0003:00000a60       __aexit_rtn                1004aa60     LIBCMT:crt0dat.obj
- 0003:00000a64       __NLG_Destination          1004aa64     LIBCMT:exsup.obj
- 0003:00000a78       ___badioinfo               1004aa78     LIBCMT:ioinit.obj
- 0003:00000ab8       __amblksiz                 1004aab8     LIBCMT:heapinit.obj
- 0003:00000abc       __First_FPE_Indx           1004aabc     LIBCMT:winxfltr.obj
- 0003:00000ac0       __Num_FPE                  1004aac0     LIBCMT:winxfltr.obj
- 0003:00000ac4       __XcptActTabSize           1004aac4     LIBCMT:winxfltr.obj
- 0003:00000ac8       __XcptActTabCount          1004aac8     LIBCMT:winxfltr.obj
- 0003:00000acc       ___security_cookie         1004aacc     LIBCMT:gs_cookie.obj
- 0003:00000ad0       ___security_cookie_complement 1004aad0     LIBCMT:gs_cookie.obj
- 0003:00000bf8       __pctype                   1004abf8     LIBCMT:ctype.obj
- 0003:00000bfc       __pwctype                  1004abfc     LIBCMT:ctype.obj
- 0003:00000c00       ___lc_time_c               1004ac00     LIBCMT:strftime.obj
- 0003:00000cb8       ___lc_time_curr            1004acb8     LIBCMT:strftime.obj
- 0003:00000cbc       ___lconv_static_decimal    1004acbc     LIBCMT:lconv.obj
- 0003:00000cc0       ___lconv_c                 1004acc0     LIBCMT:lconv.obj
- 0003:00000cf0       ___lconv                   1004acf0     LIBCMT:lconv.obj
- 0003:00000cf4       ___mb_cur_max              1004acf4     LIBCMT:nlsdata1.obj
- 0003:00000cf8       ___decimal_point           1004acf8     LIBCMT:nlsdata1.obj
- 0003:00000cfc       ___decimal_point_length    1004acfc     LIBCMT:nlsdata1.obj
- 0003:00000d00       __cfltcvt_tab              1004ad00     LIBCMT:cmiscdat.obj
- 0003:00000d30       __timezone                 1004ad30     LIBCMT:timeset.obj
- 0003:00000d34       __daylight                 1004ad34     LIBCMT:timeset.obj
- 0003:00000d38       __dstbias                  1004ad38     LIBCMT:timeset.obj
- 0003:00000dc0       __tzname                   1004adc0     LIBCMT:timeset.obj
- 0003:00000de0       __lpdays                   1004ade0     LIBCMT:days.obj
- 0003:00000e14       __days                     1004ae14     LIBCMT:days.obj
+ 0003:00000150       ?gpPluginMenu@@3PAUPluginAndMenuCommands@@A 1004a150     ConEmuPluginBase.obj
+ 0003:00000210       ?g_TerminatedThreadIdx@@3JA 1004a210     WThreads.obj
+ 0003:00000220       ___abort_behavior          1004a220     LIBCMT:abort.obj
+ 0003:000002e0       ___flsindex                1004a2e0     LIBCMT:tidtable.obj
+ 0003:000002e4       ___getvalueindex           1004a2e4     LIBCMT:tidtable.obj
+ 0003:000002e8       ___initialmbcinfo          1004a2e8     LIBCMT:mbctype.obj
+ 0003:00000508       __mbctype                  1004a508     LIBCMT:mbctype.obj
+ 0003:00000610       __mbcasemap                1004a610     LIBCMT:mbctype.obj
+ 0003:00000710       ___ptmbcinfo               1004a710     LIBCMT:mbctype.obj
+ 0003:0000080c       ___globallocalestatus      1004a80c     LIBCMT:glstatus.obj
+ 0003:00000810       ___clocalestr              1004a810     LIBCMT:nlsdata2.obj
+ 0003:00000818       ___initiallocinfo          1004a818     LIBCMT:nlsdata2.obj
+ 0003:000008f0       ___ptlocinfo               1004a8f0     LIBCMT:nlsdata2.obj
+ 0003:000008f4       ___lc_clike                1004a8f4     LIBCMT:nlsdata2.obj
+ 0003:000008f8       ___initiallocalestructinfo 1004a8f8     LIBCMT:nlsdata2.obj
+ 0003:00000a70       __aexit_rtn                1004aa70     LIBCMT:crt0dat.obj
+ 0003:00000a74       __NLG_Destination          1004aa74     LIBCMT:exsup.obj
+ 0003:00000a88       ___badioinfo               1004aa88     LIBCMT:ioinit.obj
+ 0003:00000ac8       __amblksiz                 1004aac8     LIBCMT:heapinit.obj
+ 0003:00000acc       __First_FPE_Indx           1004aacc     LIBCMT:winxfltr.obj
+ 0003:00000ad0       __Num_FPE                  1004aad0     LIBCMT:winxfltr.obj
+ 0003:00000ad4       __XcptActTabSize           1004aad4     LIBCMT:winxfltr.obj
+ 0003:00000ad8       __XcptActTabCount          1004aad8     LIBCMT:winxfltr.obj
+ 0003:00000adc       ___security_cookie         1004aadc     LIBCMT:gs_cookie.obj
+ 0003:00000ae0       ___security_cookie_complement 1004aae0     LIBCMT:gs_cookie.obj
+ 0003:00000c08       __pctype                   1004ac08     LIBCMT:ctype.obj
+ 0003:00000c0c       __pwctype                  1004ac0c     LIBCMT:ctype.obj
+ 0003:00000c10       ___lc_time_c               1004ac10     LIBCMT:strftime.obj
+ 0003:00000cc8       ___lc_time_curr            1004acc8     LIBCMT:strftime.obj
+ 0003:00000ccc       ___lconv_static_decimal    1004accc     LIBCMT:lconv.obj
+ 0003:00000cd0       ___lconv_c                 1004acd0     LIBCMT:lconv.obj
+ 0003:00000d00       ___lconv                   1004ad00     LIBCMT:lconv.obj
+ 0003:00000d04       ___mb_cur_max              1004ad04     LIBCMT:nlsdata1.obj
+ 0003:00000d08       ___decimal_point           1004ad08     LIBCMT:nlsdata1.obj
+ 0003:00000d0c       ___decimal_point_length    1004ad0c     LIBCMT:nlsdata1.obj
+ 0003:00000d10       __cfltcvt_tab              1004ad10     LIBCMT:cmiscdat.obj
+ 0003:00000d40       __timezone                 1004ad40     LIBCMT:timeset.obj
+ 0003:00000d44       __daylight                 1004ad44     LIBCMT:timeset.obj
+ 0003:00000d48       __dstbias                  1004ad48     LIBCMT:timeset.obj
+ 0003:00000dd0       __tzname                   1004add0     LIBCMT:timeset.obj
+ 0003:00000df0       __lpdays                   1004adf0     LIBCMT:days.obj
+ 0003:00000e24       __days                     1004ae24     LIBCMT:days.obj
  0003:00000e60       ?gbInCommonShutdown@@3HA   1004ae60     Common.obj
  0003:00000e68       ?gpLocalSecurity@@3PAU_SECURITY_ATTRIBUTES@@A 1004ae68     ConEmuCheck.obj
  0003:00000e6c       ?gfGetRealConsoleWindow@@3P6GPAUHWND__@@XZA 1004ae6c     ConEmuCheck.obj
@@ -2568,15 +2568,15 @@
  0001:000064c0       ?StringCopyWorkerW@@YGJPA_WIPAIPB_WI@Z 100074c0 f   ConEmuCheckEx.obj
  0001:00006650       ?StringValidateDestAndLengthW@@YGJPB_WIPAII@Z 10007650 f   ConEmuCheckEx.obj
  0001:000066a0       ?StringLengthWorkerW@@YGJPB_WIPAI@Z 100076a0 f   ConEmuCheckEx.obj
- 0001:00006cc0       ?StringValidateDestW@@YGJPB_WII@Z 10007cc0 f   ConEmuInjects.obj
- 0001:00006cf0       ?StringCopyWorkerW@@YGJPA_WIPAIPB_WI@Z 10007cf0 f   ConEmuInjects.obj
- 0001:00007750       ?ChangeExports@@YI_NPBUExportFunc@@PAUHINSTANCE__@@@Z 10008750 f   ConEmuPlugin.obj
- 0001:0000a4d0       ?GetFarSetting@@YIHPAXIPB_W@Z 1000b4d0 f   ConEmuPlugin1900.obj
- 0001:0000a770       ?CallGuiMacroProc@@YIXXZ   1000b770 f   ConEmuPlugin1900.obj
- 0001:0000ab40       ?CallGuiMacroDlg@@YGHPAXHH0@Z 1000bb40 f   ConEmuPlugin1900.obj
- 0001:0000b060       ?MAKEFARVERSION@@YI?AUVersionInfo@@KKKKW4VERSION_STAGE@@@Z 1000c060 f   ConEmuPlugin2800.obj
- 0001:0000c690       ?WExists@@YIHABUWindowInfo@@ABV?$MArray@UWindowInfo@@@@@Z 1000d690 f   ConEmuPlugin2800.obj
- 0001:0000c710       ?WLoadWindows@@YIHAAV?$MArray@UWindowInfo@@@@H@Z 1000d710 f   ConEmuPlugin2800.obj
+ 0001:00006ce0       ?StringValidateDestW@@YGJPB_WII@Z 10007ce0 f   ConEmuInjects.obj
+ 0001:00006d10       ?StringCopyWorkerW@@YGJPA_WIPAIPB_WI@Z 10007d10 f   ConEmuInjects.obj
+ 0001:00007770       ?ChangeExports@@YI_NPBUExportFunc@@PAUHINSTANCE__@@@Z 10008770 f   ConEmuPlugin.obj
+ 0001:0000a4e0       ?GetFarSetting@@YIHPAXIPB_W@Z 1000b4e0 f   ConEmuPlugin1900.obj
+ 0001:0000a780       ?CallGuiMacroProc@@YIXXZ   1000b780 f   ConEmuPlugin1900.obj
+ 0001:0000ab50       ?CallGuiMacroDlg@@YGHPAXHH0@Z 1000bb50 f   ConEmuPlugin1900.obj
+ 0001:0000b070       ?MAKEFARVERSION@@YI?AUVersionInfo@@KKKKW4VERSION_STAGE@@@Z 1000c070 f   ConEmuPlugin2800.obj
+ 0001:0000c6a0       ?WExists@@YIHABUWindowInfo@@ABV?$MArray@UWindowInfo@@@@@Z 1000d6a0 f   ConEmuPlugin2800.obj
+ 0001:0000c720       ?WLoadWindows@@YIHAAV?$MArray@UWindowInfo@@@@H@Z 1000d720 f   ConEmuPlugin2800.obj
  0001:0000d6e0       ?GetFarSetting@@YIHPAXIPB_W@Z 1000e6e0 f   ConEmuPlugin2800.obj
  0001:0000d990       ?CallGuiMacroProc@@YIXXZ   1000e990 f   ConEmuPlugin2800.obj
  0001:0000dcf0       ?CallGuiMacroDlg@@YGHPAXHH0@Z 1000ecf0 f   ConEmuPlugin2800.obj

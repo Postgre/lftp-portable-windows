@@ -1,7 +1,7 @@
-4.7.4
+Lftp 4.7.7
 
-conemu 161022
-notepad ++ 7.2.2
+conemu 170402
+notepad ++ 7.3.3
 cygwin binaries and dll files updated.
 cut added
 whereis added
