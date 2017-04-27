@@ -1,6 +1,6 @@
 #!/bin/bash
 #
-# v1.0.6 lftp sync script
+# v1.0.7 lftp sync script
 #
 # Credits: A heavily modified version of this idea and script http://www.torrent-invites.com/showthread.php?t=132965 towards a simplified end user experience.
 # Authors: Lordhades - Adamaze - userdocs
@@ -27,7 +27,7 @@ hostname="servername.com"
 # 5: The remote directory on the seedbox you wish to mirror from. Can now be passed to the script directly using "$1". It must exist on the remote server.
 remote_dir='~/directory/to/mirror/from'
 # 6: Optional - The local directory your files will be mirrored to. It is relative to the portable folder and will be created if it does not exist so the default setting will work.
-# Use the cygwin path format for other loaation - /cygdrive/c/download = C:\downloads
+# This local path is relative to the portable directory - Use the cygwin path format to specify full local paths - /cygdrive/c/download = C:\downloads
 local_dir="/Downloads"
 # 7: Optional - Set the SSH port if yours is not the default.
 port="22"
@@ -97,7 +97,7 @@ args="-c"
 #		   --Move					  same as --Remove-source-dirs
 # -a								  same as --allow-chown --allow-suid --no-umask
 #
-[[ ! -z "$1" ]] && remote_dir="$1"
+[[ ! -z "$1" ]] && remote_dir="${1%/}"
 #
 # on cygwin awk is a symlink to gawk. Testing for which to use.
 [[ -z $(whereis gawk | cut -d ':' -f 2) ]] && awkpath="awk" || awkpath="gawk"
@@ -115,6 +115,7 @@ then
 	echo "$base_name is running already."
 	exit
 else
+    [[ -f $keydirectory/$keyname ]] && chmod 700 $keydirectory/$keyname    
 	touch "$lock_file"
 	lftp -e "debug -Tpo $tmpdir/$base_name.PID 0;set sftp:connect-program ssh -a -x -i $keydirectory/$keyname" -p "$port" -u "$username,$password" "sftp://$hostname" <<-EOF
 	set sftp:auto-confirm yes
@@ -122,7 +123,7 @@ else
 	set pget:default-n $default_pget
 	set mirror:parallel-transfer-count "$parallel"
 	set mirror:use-pget-n $pget_mirror
-	mirror $args --log="$tmpdir/$base_name.log" "$remote_dir" "$local_dir"
+	mirror $args --log="$tmpdir/$base_name.log" "${remote_dir%/}" "$local_dir/"
 	set cache:enable no
 	set show-status no
 	quit
