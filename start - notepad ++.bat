@@ -1,1 +1,1 @@
-start bin\notepad\notepad++.exe
+start bin\notepad\notepad++.exe -nosession
