@@ -1,0 +1,1 @@
+xcopy "C:\cygwin64\usr\share" "share\" /F /U /E /H /Y /B

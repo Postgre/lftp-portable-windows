@@ -20,7 +20,7 @@ color red "\"[^"]*\""  "\'[^']*\'"
 color green "`[^`]*`"
 
 # Error lines:
-color brightblack "^\*\*\*.*"
+color brightred "^\*\*\*.*"
 
 # Brackets:
 color magenta "\[|\]|\(|\)"
