@@ -1,3 +1,4 @@
+Update - Update: This solution has been abandoned in favour of this: lftp-winscp-portable - Use this instead. https://github.com/userdocs/lftp-winscp-portable
 
 Updating:
 
